@@ -1,0 +1,17 @@
+<!--client/pages/login/login.wxml-->
+<view wx:if="{{canIUse}}">
+  <view class='header'>
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class='content'>
+    <view>Remote Doctor applies for the following permissions</view>
+    <!-- <view>申请获取以下权限</view> -->
+    <text>Obtain your WeChat personal information (nickname, avatar, etc.)</text>
+  </view>
+  <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">  
+Authorized login
+  </button>
+</view>
+<view wx:else>Please upgrade the WeChat version</view>

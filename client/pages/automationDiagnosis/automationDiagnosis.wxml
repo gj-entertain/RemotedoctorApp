@@ -1,0 +1,33 @@
+  <view class="head" >
+  <view class="empty"></view>
+  <text id = "header">Search \n Engine</text>
+  </view>
+
+
+<form bindsubmit='res'>
+ <view class='search wrapper iconfont icon-chakan'>
+  <input class="input" type="strings" name="symptoms" placeholder="Please input your symptoms"
+      bindinput ="healthInput"/>
+ </view>
+
+
+
+
+ <view class=''><button class = 'submitBtn' form-type='submit' type = "primary">Submit</button></view>
+</form>
+<view>{{symptoms}}</view>
+<view class='wrapper'>
+  <button class='wepay iconfont icon-baidu' bindtap='goBaidu'></button>
+</view>
+<view class='wrapper'>
+  <button class='wepay' bindtap='goWebmd'>WebMD</button>
+</view>
+<view class='wrapper'>
+  <button class='wepay iconfont icon-Google' bindtap='goGoogle'></button>
+</view>
+<view class='wrapper'>
+  <button class='wepay' bindtap='goDingxiang'>Dingxiang Doctors</button>
+</view>
+<view class='wrapper'>
+  <button class='wepay iconfont icon-bing' bindtap='goBing'></button>
+</view>

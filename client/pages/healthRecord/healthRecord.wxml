@@ -1,0 +1,49 @@
+<!--client/pages/healthRecord/healthRecord.wxml-->
+  <view class="head" >
+  <view class="empty"></view>
+  <text id = "header">Health \n Record</text>
+  </view>
+<form bindsubmit='res'>
+  <view class="section">
+      <view class="healthView iconfont icon-name">Name：
+      <input class="input" type="text" name="name" value='{{name}}' placeholder="Please input your name"
+      bindinput ="healthInput"/>
+      </view>
+
+      <view class="healthView iconfont icon-pulse">Pulse Rate(bpm)：
+      <input class="input" type="number" name="pulse" value='{{BPM}}' placeholder="Please input your pulse"
+      bindinput ="healthInput"/>
+      </view>
+
+      <view class="healthView iconfont icon-blood">Blood Oxygen(%）：
+      <input class="input" type="number" name="oxygen" value='{{SpO2}}' placeholder="Please input your blood oxygen"
+      bindinput="healthInput" />
+      </view>
+
+      <view class="healthView iconfont icon-xueya">Blood Pressure(mmHg）：
+      <input class="input" type="number" name="hpressure" value='{{NIBP_H}}' placeholder="Please input your systolic pressure"
+      bindinput="healthInput" />
+      <input class="input" type="number" name="lpressure" value='{{NIBP_L}}' placeholder="Please input your diastolic pressure"
+      bindinput="healthInput" />
+      </view>
+
+      <view class="healthView iconfont icon-temperature">Temperature(℃）：
+      <input class="input" type="digit" name="temp" value='{{temp}}' placeholder="Please input your temparature"
+      bindinput="healthInput" />
+      </view>
+  </view>
+
+
+  <button class = 'submitBtn' form-type='submit' type="primary">Submit</button>
+
+  <view class='submit'>
+  <navigator url="../recordHistory/recordHistory" open-type="navigate" class='history-text'>
+  <text>View History</text>
+  </navigator>
+  </view>
+
+    <view class='submit'>
+    <button class='submitBtn' bindtap='goDevice'>Vital Signs</button>
+  </view>
+  
+</form>

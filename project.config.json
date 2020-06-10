@@ -1,0 +1,81 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {},
+	"appid": "wxaa9316a1e80aa373",
+	"projectname": "RemoteDoctor",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "specialist",
+					"pathName": "pages/remoteDiagnosis/specialist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "remote",
+					"pathName": "pages/remoteDiagnosis/remote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/fourFunctions/fourFunctions",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/healthRecord/healthRecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/automationDiagnosis/automationDiagnosis",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "prescription",
+					"pathName": "pages/Prescription/Prescription",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "add",
+					"pathName": "pages/pxadd/pxadd",
+					"scene": null
+				}
+			]
+		}
+	}
+}

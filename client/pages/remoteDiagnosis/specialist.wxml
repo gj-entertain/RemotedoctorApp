@@ -1,0 +1,38 @@
+<!--client/pages/remoteDiagnosis/specialist.wxml-->
+<view class="container">
+<scroll-view class = "left-container" scroll-y style = "height:{{screenHeight}}px">
+  <view bindtap="clickItem" wx:for = "{{doctorData}}" wx:item = "item" wx:key = "key" id = "{{item.id}}" class = "doctor {{item.cls}}">
+  {{item.text}}
+  </view>
+</scroll-view>
+
+<scroll-view class = "right-container" scoll-y style = "height:{{screenHeight}}px">
+<view clas="info">
+<view class = 'doctor-info'>
+<text class = 'large-font'> {{doctorName}} </text>
+<text class = 'small-font'> {{doctorTitle}} \n\n</text>
+
+<text class = 'small-font-black'>{{doctorSpec}} </text>
+<!-- <text class = 'small-font'> 59 Xi Kang Road, Jing An District, 34323</text> -->
+</view>
+
+
+
+
+
+<view class = 'contact-info'>
+<!-- <text class = 'iconfont icon-weibiaoti-'> {{doctorTel}}</text> -->
+<text class = 'iconfont icon-weixin'> {{doctorWC}}</text>
+<!-- <text class = 'iconfont icon-email'> {{doctorEmail}}</text>
+<text class = 'iconfont icon-dizhi'> {{doctorAddr}}</text> -->
+</view>
+
+    <navigator url="" open-type="navigate" class="">
+    <!-- <text>General Practitioner</text> -->
+    <button type = "primary" open-type='contact'>Contact</button>
+    </navigator>
+</view>
+</scroll-view>
+</view>
+
+

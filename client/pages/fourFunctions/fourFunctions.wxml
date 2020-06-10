@@ -1,0 +1,45 @@
+<!--client/pages/fourFunctions/fourFunctions.wxml-->
+<!-- 用户 openid -->
+  <view class="user" >
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userImg"
+      style="background-image: url({{avatarUrl}})"
+    ></button> 
+  </view>
+
+
+  <view class='funcIndex'>
+
+  <!-- Remote Diagnosis -->
+  <view class="function">
+    <navigator url="../remoteDiagnosis/remote" open-type="switchTab" class="function-text">
+      <text>Remote Diagnosis</text>
+    </navigator>
+  </view>
+
+  <!-- Health Record -->
+  <view class="function">
+    <navigator url="../healthRecord/healthRecord" open-type="switchTab" class="function-text">
+      <text>Health Record</text>
+    </navigator>
+  </view>
+
+  <!-- Automatic Diagnosis -->
+  <view class="function">
+    <navigator url="../automationDiagnosis/automationDiagnosis" open-type="switchTab" class="function-text">
+      <text>Search Engine</text>
+    </navigator>
+  </view>
+
+
+  <!-- Prescription -->
+  <view class="function">
+    <navigator url="../Prescription/Prescription" open-type="switchTab" class="function-text">
+      <text>Prescription</text>
+    </navigator>
+  </view>
+
+  
+  </view>

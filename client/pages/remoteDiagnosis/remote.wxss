@@ -1,0 +1,68 @@
+/* client/pages/remoteDiagnosis/remote.wxss */
+.remote-function{
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+  height: 290rpx;
+  width: 290rpx;
+  background: #585858;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* border-left: none;
+  border-right: none; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  border-radius: 20%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.remote-text {
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+  font-size: 34rpx;
+  color: white;
+}
+
+button::after{
+  border: none;
+}
+
+button{
+  background-color: #585858;
+  border-radius:0;
+  color: white;
+}
+
+.remote{
+  margin-top: 50rpx;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.head {
+  height: 210rpx;
+  width: 100%;
+  /* margin-bottom:80rpx; */
+  display: relative;
+  align-items: center;
+  background-color:#FCE2A9;
+  padding-left:25rpx;
+}
+.empty {
+  height: 70rpx;
+  width: 100%;
+  /* margin-bottom:80rpx; */
+  display: relative;
+  align-items: center;
+  background-color:#FCE2A9;
+}
+
+.head text{
+  font-size:25pt;
+  font-weight:bolder;
+  line-height: 60rpx;
+}

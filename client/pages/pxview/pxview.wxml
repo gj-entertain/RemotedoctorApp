@@ -1,0 +1,21 @@
+
+  
+  <view class = "container">
+  <text class="title">Prescription History Search</text>
+  </view>
+
+
+  <view class='search wrapper iconfont icon-chakan'> 
+  <input type="text" name='goodsname' class="inputGoods" placeholder="Enter Prescription_ID" bindinput="goodsNameInput" />
+  </view>
+
+
+
+  <button class="loginBtn" size="default" bindtap="clickButton" form-type="submit" type="primary">Submit</button>
+
+  <view class="record" wx:for="{{records}}">
+    <view > Name: {{item.name}}</view>
+    <view > Drug Name: {{item.Drug_Name}}</view>
+    <view> Dosage Form: {{item.Dosage_Form}}%</view>
+    <view > Route: {{item.R_oute}}</view>
+  </view>

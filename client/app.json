@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/fourFunctions/fourFunctions",
+    "pages/healthRecord/healthRecord",
+    "pages/remoteDiagnosis/remote",
+    "pages/remoteDiagnosis/specialist",
+    "pages/recordHistory/recordHistory",
+    "pages/healthRecord/out",
+    "pages/Prescription/Prescription",
+    "pages/pxadd/pxadd",
+    "pages/pxview/pxview",
+    "pages/outweb/outweb",
+    "pages/automationDiagnosis/automationDiagnosis"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Remote Doctor",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#000000",
+    "color": "#ffffff",
+    "selectedColor": "#FCE2A9",
+    "list": [
+      {
+        "pagePath":"pages/remoteDiagnosis/remote",
+        "text": "Diagnosis",
+        "iconPath":"images/diagnosis0.png",
+        "selectedIconPath":"images/diagnosis1.png"
+      },
+      {
+        "pagePath": "pages/healthRecord/healthRecord",
+        "text": "Record",
+        "iconPath": "images/record0.png",
+        "selectedIconPath": "images/record1.png"
+      }
+      ,
+      {
+        "pagePath": "pages/fourFunctions/fourFunctions",
+        "text": "Home",
+        "iconPath": "images/home0.png",
+        "selectedIconPath": "images/home1.png"
+      }
+      ,
+      {
+        "pagePath": "pages/automationDiagnosis/automationDiagnosis",
+        "text": "Search",
+        "iconPath": "images/search0.png",
+        "selectedIconPath": "images/search1.png"
+      }
+      ,
+      {
+        "pagePath": "pages/Prescription/Prescription",
+        "text": "Prescription",
+        "iconPath": "images/drug0.png",
+        "selectedIconPath": "images/drug1.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,20 @@
+<!--client/pages/remoteDiagnosis/remote.wxml-->
+  <view class="head" >
+  <view class="empty"></view>
+  <text id = "header">Remote \n Diagnosis</text>
+  </view>
+<view class = "remote">
+<view class="remote-function">
+    <navigator url="general" open-type="navigate" class="remote-text">
+      <!-- <text>General Practitioner</text> -->
+      <button class = "btn" open-type='contact'>General Practitioner</button>
+    </navigator>
+  </view>
+
+    <view class="remote-function">
+    <navigator url="specialist" open-type="navigate" class="remote-text" >
+      <text>Medical Specialist</text>
+    </navigator>
+  </view>
+</view>
+  

@@ -1,0 +1,42 @@
+<!--client/pages/healthRecord/healthRecord.wxml-->
+  <view class="head" >
+  <view class="empty"></view>
+  <text id = "header">Add \n Prescription</text>
+  </view>
+<form bindsubmit='res'>
+  <view class="section">
+      <view class="prescription">Name：
+      <input class="input" type="text" name="name" value='{{name}}' placeholder="Please input your name"
+      bindinput ="healthInput"/>
+      </view>
+
+      <view class="prescription">Drug Name：
+      <input class="input" type="text" name="drugName" value='{{Drug_Name}}' placeholder="Input Drug Name"
+      bindinput ="healthInput"/>
+      </view>
+
+      <view class="prescription">Dosage Form：
+      <input class="input" type="text" name="dosageForm" value='{{Dosage_Form}}' placeholder="Input Dosage Form"
+      bindinput="healthInput" />
+      </view>
+
+      <view class="prescription">Route：
+      <input class="input" type="text" name="route" value='{{R_oute}}' placeholder="Input Route"
+      bindinput="healthInput" />
+      </view>
+
+      <view class="prescription">Prescriptionid：
+      <input class="input" type="text" name="pxid" value='{{Prescription_Id}}' placeholder="Input PrescriptionId"
+      bindinput="healthInput" />
+      </view>
+  </view>
+
+
+  <button class = 'submitBtn' form-type='submit' type="primary">Submit</button>
+
+  <view class='submit'>
+  <navigator url="../pxview/pxview" open-type="navigate" class='history-text'>
+  <text>View History</text>
+  </navigator>
+  </view>
+</form>

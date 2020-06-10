@@ -1,0 +1,68 @@
+/* client/pages/fourFunctions/fourFunctions.wxss */
+.function{ 
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+  height: 290rpx;
+  width: 290rpx;
+  background: #585858;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* border-left: none;
+  border-right: none; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  border-radius: 20%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.funcIndex{
+  margin-left:auto;
+  margin-right:auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* display: flex; */
+}
+
+.function-text{
+  width: 100%;
+  line-height: 45px;
+  font-size: 28rpx;
+  color: white;
+  text-align: center;
+}
+
+
+
+.user {
+  height: 280rpx;
+  width: 100%;
+  /* background: #fff; */
+  margin-bottom:80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  /* background-repeat:no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover; */
+  background-color:#FCE2A9;
+}
+
+
+.userImg{
+  width: 230rpx;
+  height: 230rpx;
+  margin-top: 300rpx;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 100rpx;
+  border-radius: 50%;
+  background-size: contain; 
+  border: 10px solid white;
+}
+

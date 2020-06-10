@@ -1,0 +1,20 @@
+<view class = "history">
+
+<view class = "container">
+<text class="title">Health Record History</text>
+</view>
+
+
+<view class="record" wx:for="{{records}}">
+  <view class="date">{{item.date}}</view>
+  <view wx:if="{{item.name}}" class="data iconfont icon-pulse"> Name: {{item.name}}</view>
+  <view wx:if="{{item.BPM}}" class="data iconfont icon-pulse"> Pulse Rate: {{item.BPM}}</view>
+  <view wx:if="{{item.SpO2}}" class="data iconfont icon-blood"> Blood Oxygen: {{item.SpO2}}%</view>
+  <view wx:if="{{item.NIBP_H}}" class="data iconfont icon-xueya"> Systolic Pressure: {{item.NIBP_H}}</view>
+  <view wx:if="{{item.NIBP_L}}" class="data iconfont icon-xueya"> Diastolic Pressure: {{item.NIBP_L}}</view>
+  <view wx:if="{{item.temp}}" class="data iconfont icon-temperature"> Temperature: {{item.temp}}℃</view>
+</view>
+
+</view>
+
+

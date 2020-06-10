@@ -1,0 +1,15 @@
+  <view class="head" >
+  <view class="empty"></view>
+  <text id = "header"> \n Prescription</text>
+  </view>
+
+<view class="fda">
+
+<button bindtap='invitation'class = "search iconfont icon-chakan">FDA</button>
+
+<view class="fda">
+
+ <button bindtap='goToAddPx'>Add Prescription</button>
+ <button bindtap="goToViewPx">View Prescription</button>
+</view>
+</view>
